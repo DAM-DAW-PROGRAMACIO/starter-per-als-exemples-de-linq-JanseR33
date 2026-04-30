@@ -31,6 +31,12 @@ namespace LinQ
         {
             var biblioteca = GeneradorDades.CreaBiblioteca();
             Console.WriteLine("\n=== EXEMPLE 1.2: Filtratge amb múltiples condicions ===\n");
+            IEnumerable<ElementMultimedia> seleccionats = biblioteca.Elements.Where(e =>
+                e.Any >= 1970 && e.Any <= 1980 && e.Etiquetes.Contains("clàssic", StringComparer.OrdinalIgnoreCase));
+            foreach (var )
+            {
+                
+            }
 
            
         }
