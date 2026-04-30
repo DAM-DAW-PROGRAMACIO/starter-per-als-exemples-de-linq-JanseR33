@@ -109,8 +109,10 @@ namespace LinQ
         {
             var biblioteca = GeneradorDades.CreaBiblioteca();
             Console.WriteLine("\n=== EXEMPLE 3.1: Ordenació simple amb OrderBy ===\n");
+            var canconsOrdenades = biblioteca.Elements
+                .OfType<Canco>()
+                .OrderBy(canco => canco.Titol);
 
-           
         }
 
         /// <summary>
